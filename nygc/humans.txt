@@ -1,0 +1,11 @@
+/* TEAM */
+
+Design & UX: Angel Ng
+Development: Patrick Kunka
+Production: Aretha Choi
+Design: Lucas Ballasy
+Design: Molly Sugar
+Web Ops: Sylvia Gacek
+QA & Training: Angela Hum
+
+http://www.barrelny.com
