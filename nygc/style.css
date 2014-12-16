@@ -419,6 +419,7 @@ h3 a,
 .header aside span{
 	position: relative;
 }
+.header .aside_btns{display: inline;}
 
 .wysiwyg p a:before,
 .wysiwyg li a:before,
@@ -1619,7 +1620,7 @@ input[type="search"]::-webkit-search-cancel-button{
 .header aside span{
 	font-size: 13px;
 	font-weight: 300;
-	margin-right: 20px;
+	margin-right: 10px;
 	color: #555;
 }
 
@@ -1715,7 +1716,7 @@ input[type="search"]::-webkit-search-cancel-button{
 	width: 100%;
 }
 
-@media all and (max-width: 1550px){
+@media all and (max-width: 1562px){
 	.header nav > ul{
 		width: 630px;
 	}
@@ -1725,7 +1726,7 @@ input[type="search"]::-webkit-search-cancel-button{
 	}
 }
 
-@media all and (max-width: 1550px){
+@media all and (max-width: 1562px){
 	.header aside .btn{
 		padding: 0 20px;
 	}
@@ -1735,7 +1736,7 @@ input[type="search"]::-webkit-search-cancel-button{
 	}
 }
 
-@media all and (max-width: 1415px) and (min-width: 711px){
+@media all and (max-width: 1435px) and (min-width: 711px){
 	.header{
 		position: relative;
 	}
@@ -1886,7 +1887,7 @@ input[type="search"]::-webkit-search-cancel-button{
 	color: #fff;
 }
 
-@media all and (max-width: 1550px){
+@media all and (max-width: 1562px){
 	.sub-nav{
 		padding: 13px 50px;
 	}
@@ -2155,7 +2156,7 @@ input[type="search"]::-webkit-search-cancel-button{
 	font-weight: 600;
 }
 
-@media all and (max-width: 1550px){
+@media all and (max-width: 1562px){
 	.back-to{
 		padding: 13px 50px;
 	}
@@ -2284,13 +2285,16 @@ input[type="search"]::-webkit-search-cancel-button{
 	position: absolute;
 	width: 100%;
 	height: 20px;
-	bottom: 20px;
+	bottom: 25px;
 	text-align: center;
 	opacity: 1;
+	z-index: 3;
 }
 
 .carousel .pager-list .pager{
 	display: inline-block;
+	overflow: hidden;
+	text-indent: 1000px;
 	width: 15px;
 	height: 15px;
 	background: #fff;
@@ -2547,6 +2551,98 @@ input[type="search"]::-webkit-search-cancel-button{
 
 }
 
+
+.carousel .overlay{
+	height: 100%;
+	left: 50%;
+	margin-left: -2500px;
+	position: relative;
+	text-align: center;
+	width: 5000px;
+}
+
+.overlay .pager.next {
+    background: none repeat scroll 0 0 #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    opacity: 0.5;
+    position: relative;
+    width: 1900px;
+    z-index: 40;
+}
+
+.overlay .blank {
+    display: inline-block;
+    width: 1024px;
+    top: -50%;
+    position: relative;
+    z-index: 40;
+    margin: 0 -5px;
+
+}
+
+.overlay .blank.center{text-align: center;}
+.overlay .blank.left{text-align: left;}
+.overlay .blank.right{text-align: right;}
+
+.pager.prev {
+    background: none repeat scroll 0 0 #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    opacity: 0.5;
+    position: relative;
+    width: 1900px;
+    z-index: 40;
+}
+
+.video-controls {
+    height: 40px;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+.overview .intro .link_box_top{
+    display: block;
+    height: 17%;
+    left: 44%;
+    position: absolute;
+    top: 15%;
+    width: 12%;
+    z-index: 3;
+}
+
+.overview .intro .link_box_right{
+    display: block;
+    height: 17%;
+    left: 61.5%;
+    position: absolute;
+    top: 40.5%;
+    width: 12%;
+    z-index: 3;
+}
+
+.overview .intro .link_box_bottom{
+    display: block;
+    height: 17%;
+    left: 44%;
+    position: absolute;
+    top: 65.5%;
+    width: 12%;
+    z-index: 3;
+}
+
+.overview .intro .link_box_left{
+    display: block;
+    height: 17%;
+    left: 26.5%;
+    position: absolute;
+    top: 40.5%;
+    width: 12%;
+    z-index: 3;
+}
 
 /* --- STATEMENT --- */
 
@@ -3846,6 +3942,7 @@ input[type="search"]::-webkit-search-cancel-button{
 	vertical-align: top;
 	padding: 0 2em 0 0;
 	/*width: 33%;*/
+	color: #40C17E;
 }
 
 .supporters .content li:before{
